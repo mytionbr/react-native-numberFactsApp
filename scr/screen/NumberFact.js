@@ -12,14 +12,16 @@ const NumberFact = () => {
 
     const handleInput = (value)=>{
         value = value.replace(/\s/g, '')
-        handleIpi(value)
+        handleFact(value)
     }
 
-    const handleIpi = (number)=>{
+    const handleFact = (number)=>{
         if (number != '') {
             fetch(`http://numbersapi.com/${number}`)
                 .then(response => response.text())
                 .then( data =>{   
+                   
+                    
                     setFact({text:data})
                 })
                 .catch(err => console.log(err))
@@ -27,7 +29,8 @@ const NumberFact = () => {
             setFact({text:''})
         }
     }
-    
+
+   
 
     
   return (
@@ -42,7 +45,7 @@ const NumberFact = () => {
     <Content>
       <Card >
         <CardItem header style={{backgroundColor:'#1ABC9C'}}>
-          <Text style={{color:'#fff',textAlign:'center'}}>Insira um número e obtenha um fato aleatório</Text>
+          <Text style={{color:'#fff',textAlign:'center',fontSize:20}}>Insira um número e obtenha um fato aleatório</Text>
         </CardItem>
         <CardItem style={{backgroundColor:'#1ABC9C'}}>
           <Body>
@@ -55,7 +58,7 @@ const NumberFact = () => {
           </Body>
         </CardItem>
         <CardItem footer style={{backgroundColor:'#1ABC9C'}}>
-          <Text style={{color:'#fff',textAlign:'center'}}>{fact.text}</Text>
+          <Text style={{color:'#fff',textAlign:'center',fontSize:20}}>{fact.text}</Text>
         </CardItem>
      </Card>
     </Content>
