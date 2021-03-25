@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from 'react'
-import { StyleSheet,  View } from 'react-native';
+import React,{useState} from 'react'
+import { StyleSheet,StatusBar } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Text,Input,Item,Body,Title,Left,Right } from 'native-base';
 
 const NumberFact = () => {
@@ -34,8 +34,10 @@ const NumberFact = () => {
 
     
   return (
+    
     <Container style={{backgroundColor:'#76D7C4'}}>
-    <Header style={{backgroundColor:'#0E6655'}}>
+     
+    <Header style={{backgroundColor:'#0E6655'}} androidStatusBarColor='#0E6655'>
     <Left style={{flex:1}}/>
           <Body style={{flex:3  }}>
             <Title style={{alignSelf:'center'}}>Number Facts</Title>
