@@ -38,14 +38,14 @@ const NumberFact = () => {
     <Header style={{backgroundColor:'#0E6655'}}>
     <Left style={{flex:1}}/>
           <Body style={{flex:3  }}>
-            <Title style={{alignSelf:'center'}}>Fato numérico</Title>
+            <Title style={{alignSelf:'center'}}>Number Facts</Title>
           </Body>
           <Right style={{flex:1}} />
     </Header>
     <Content>
       <Card >
         <CardItem header style={{backgroundColor:'#1ABC9C'}}>
-          <Text style={{color:'#fff',textAlign:'center',fontSize:20}}>Insira um número e obtenha um fato aleatório</Text>
+          <Text style={{color:'#fff',textAlign:'center',fontSize:20}}>Enter a number and get a random fact</Text>
         </CardItem>
         <CardItem style={{backgroundColor:'#1ABC9C'}}>
           <Body>
