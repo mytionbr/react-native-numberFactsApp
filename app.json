@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "tab1",
-    "slug": "tab1",
+    "name": "Number Facts",
+    "slug": "Number_Facts",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon_numberFact.png",
@@ -21,9 +21,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon_numberFact.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.mytionbr.Number_Facts"
     },
     "web": {
       "favicon": "./assets/favicon.png"
