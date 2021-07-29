@@ -1,6 +1,6 @@
 # Number Facts
 
-Number Facts é um aplicativo simples que exibe curiosidades de acordo com o valor númerico inserido.
+Number Facts é um aplicativo simples que exibe curiosidades de acordo com o valor numérico inserido.
 
  Splash  | Tela inicial | Demonstração | Demonstração |
 | --- | --- | --- | --- |
